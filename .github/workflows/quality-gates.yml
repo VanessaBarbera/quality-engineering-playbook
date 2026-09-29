@@ -1,0 +1,72 @@
+name: Quality Gates
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  performance-smoke:
+    name: k6 performance smoke
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Subir servidor fictício FinFlow
+        run: |
+          node examples/k6/mock-server.js > /tmp/finflow-server.log 2>&1 &
+          echo $! > /tmp/finflow-server.pid
+
+      - name: Aguardar health check
+        run: |
+          for attempt in {1..20}; do
+            if curl --fail --silent http://127.0.0.1:3000/api/health > /dev/null; then
+              echo "FinFlow demo disponível"
+              exit 0
+            fi
+
+            sleep 1
+          done
+
+          cat /tmp/finflow-server.log
+          exit 1
+
+      - name: Configurar k6
+        uses: grafana/setup-k6-action@v1
+
+      - name: Executar smoke de performance
+        env:
+          BASE_URL: http://127.0.0.1:3000
+        run: |
+          mkdir -p reports
+          k6 run             --summary-export=reports/k6-summary.json             examples/k6/smoke.js
+
+      - name: Publicar evidência
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: k6-quality-gate-report
+          path: |
+            reports/k6-summary.json
+            /tmp/finflow-server.log
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Encerrar servidor
+        if: always()
+        run: |
+          if [ -f /tmp/finflow-server.pid ]; then
+            kill "$(cat /tmp/finflow-server.pid)" || true
+          fi
