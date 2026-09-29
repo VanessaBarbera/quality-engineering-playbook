@@ -19,6 +19,42 @@ O projeto foi criado como portfólio profissional para demonstrar não apenas ex
   <em>Resumo visual do cenário fictício FinFlow, da arquitetura de referência, dos pilares de Quality Engineering e dos principais entregáveis do repositório.</em>
 </p>
 
+## Use este template no seu projeto
+
+Este repositório está configurado como **GitHub Template Repository**.
+
+Para reutilizar o playbook:
+
+1. Clique em **Use this template** no topo do repositório.
+2. Escolha **Create a new repository**.
+3. No novo repositório, comece pelo arquivo **[START-HERE.md](START-HERE.md)** e adapte os templates ao contexto do seu produto.
+
+Você não precisa manter o cenário FinFlow. Ele existe como **exemplo preenchido**. Para um projeto real, substitua o contexto fictício pelas regras, riscos, integrações e critérios do seu próprio produto.
+
+### Caminho recomendado
+
+```text
+Use this template
+        ↓
+START-HERE.md
+        ↓
+Contexto do produto
+        ↓
+Matriz de riscos
+        ↓
+Plano de testes
+        ↓
+Decisão de automação
+        ↓
+Quality Gates
+        ↓
+Execução + evidências
+        ↓
+Observabilidade + melhoria contínua
+```
+
+> A proposta deste template não é impor uma receita pronta, mas oferecer uma estrutura reutilizável para decisões de Quality Engineering.
+
 ## Quero reutilizar este playbook
 
 Este repositório foi preparado para ser **adaptado por outros profissionais e times**.
