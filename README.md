@@ -1,5 +1,7 @@
 # Quality Engineering Playbook
 
+[![Quality Gates](https://github.com/VanessaBarbera/quality-engineering-playbook/actions/workflows/quality-gates.yml/badge.svg)](https://github.com/VanessaBarbera/quality-engineering-playbook/actions/workflows/quality-gates.yml)
+
 Playbook prático de **Quality Engineering** com estratégias, decisões, templates e exemplos técnicos aplicáveis ao ciclo de desenvolvimento de software.
 
 O projeto foi criado como portfólio profissional para demonstrar não apenas execução de testes, mas também **raciocínio de qualidade, análise de risco, estratégia de automação, CI/CD, observabilidade e tomada de decisão**.
@@ -15,6 +17,20 @@ O projeto foi criado como portfólio profissional para demonstrar não apenas ex
 <p align="center">
   <em>Resumo visual do cenário fictício FinFlow, da arquitetura de referência, dos pilares de Quality Engineering e dos principais entregáveis do repositório.</em>
 </p>
+
+## Pipeline executável
+
+Este playbook também possui uma **pipeline real no GitHub Actions**. A cada push ou pull request para a branch `main`, o workflow sobe um pequeno servidor fictício do FinFlow e executa um **smoke de performance com k6**.
+
+Os Quality Gates atuais exigem:
+
+- menos de **1%** de requisições com erro;
+- **p95 abaixo de 500 ms**;
+- mais de **99%** dos checks aprovados.
+
+Se um threshold não for atendido, a pipeline falha e impede que uma execução reprovada seja tratada como saudável. O relatório do k6 é armazenado como artifact para evidência.
+
+➡️ [Como os Quality Gates são executados](docs/21-running-quality-gates.md)
 
 ## Cenário de referência — FinFlow
 
@@ -75,6 +91,7 @@ Esse contexto permite explorar riscos financeiros, integrações, APIs, persist�
 
 19. [Cenários de Teste do FinFlow](docs/19-test-scenarios.md)
 20. [Matriz de Rastreabilidade](docs/20-traceability-matrix.md)
+21. [Execução dos Quality Gates](docs/21-running-quality-gates.md)
 
 ## Templates
 
@@ -195,6 +212,8 @@ quality-engineering-playbook/
 - [x] Diagramas
 - [x] Cenários e rastreabilidade
 - [x] Exemplos técnicos
+- [x] Pipeline real com k6 e Quality Gates
+- [x] Artifact de evidência no GitHub Actions
 
 ## Autoria
 
