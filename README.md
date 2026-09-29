@@ -1,6 +1,7 @@
 # Quality Engineering Playbook
 
 [![Quality Gates](https://github.com/VanessaBarbera/quality-engineering-playbook/actions/workflows/quality-gates.yml/badge.svg)](https://github.com/VanessaBarbera/quality-engineering-playbook/actions/workflows/quality-gates.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Playbook prático de **Quality Engineering** com estratégias, decisões, templates e exemplos técnicos aplicáveis ao ciclo de desenvolvimento de software.
 
@@ -17,6 +18,51 @@ O projeto foi criado como portfólio profissional para demonstrar não apenas ex
 <p align="center">
   <em>Resumo visual do cenário fictício FinFlow, da arquitetura de referência, dos pilares de Quality Engineering e dos principais entregáveis do repositório.</em>
 </p>
+
+## Quero reutilizar este playbook
+
+Este repositório foi preparado para ser **adaptado por outros profissionais e times**.
+
+O **FinFlow** é apenas um exemplo preenchido. Se você quiser aplicar a estratégia ao seu próprio produto, comece por:
+
+➡️ **[START HERE — Como reutilizar este Playbook](START-HERE.md)**
+
+O caminho recomendado é:
+
+```text
+Contexto do produto
+        ↓
+Análise de riscos
+        ↓
+Estratégia de cobertura
+        ↓
+Decisão de automação
+        ↓
+Quality Gates
+        ↓
+Execução e evidências
+        ↓
+Observabilidade e melhoria contínua
+```
+
+### Templates reutilizáveis
+
+- [Contexto do Produto](templates/product-context-template.md)
+- [Matriz de Riscos](templates/risk-matrix-template.md)
+- [Plano de Testes](templates/test-plan-template.md)
+- [Decisão de Automação](templates/automation-decision-template.md)
+- [Quality Gates](templates/quality-gates-template.md)
+- [Caso de Teste](templates/test-case-template.md)
+- [Bug Report](templates/bug-report-template.md)
+- [Release Checklist](templates/release-checklist.md)
+
+Também existe um guia mais detalhado em [Como usar este Playbook](docs/00-how-to-use.md).
+
+### Como adaptar
+
+Você pode fazer um **fork** deste repositório ou copiar apenas os templates necessários. Depois substitua o contexto fictício do FinFlow pelas regras, riscos, integrações e critérios do seu produto.
+
+> O objetivo não é copiar decisões prontas. É reutilizar a estrutura de raciocínio e adaptar as decisões ao risco do seu contexto.
 
 ## Pipeline executável
 
@@ -214,6 +260,12 @@ quality-engineering-playbook/
 - [x] Exemplos técnicos
 - [x] Pipeline real com k6 e Quality Gates
 - [x] Artifact de evidência no GitHub Actions
+
+## Reutilização e licença
+
+Este projeto está disponível sob a **licença MIT**, permitindo uso, cópia, adaptação e distribuição, mantendo o aviso de copyright e a licença.
+
+Contribuições também são bem-vindas. Consulte [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Autoria
 
