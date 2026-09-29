@@ -6,6 +6,16 @@ O projeto foi criado como portfólio profissional para demonstrar não apenas ex
 
 > **Quality is not a testing phase. It is a strategy applied throughout the software development lifecycle.**
 
+## Visão visual do projeto
+
+<p align="center">
+  <img src="./assets/finflow-playbook-overview.svg" alt="Visão geral do Quality Engineering Playbook — FinFlow" width="100%">
+</p>
+
+<p align="center">
+  <em>Resumo visual do cenário fictício FinFlow, da arquitetura de referência, dos pilares de Quality Engineering e dos principais entregáveis do repositório.</em>
+</p>
+
 ## Cenário de referência — FinFlow
 
 O playbook utiliza o **FinFlow**, uma plataforma fictícia de crédito digital criada exclusivamente para este portfólio.
