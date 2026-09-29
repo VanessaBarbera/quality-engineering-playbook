@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eef7ff"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b67c2"/>
+      <stop offset="100%" stop-color="#16b7c9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0b2340" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .title{font:700 52px Arial,sans-serif;fill:#0b2b5c}
+      .subtitle{font:700 28px Arial,sans-serif;fill:#1170bd}
+      .small{font:400 19px Arial,sans-serif;fill:#536b85}
+      .section{font:700 27px Arial,sans-serif;fill:#0b2b5c}
+      .body{font:400 18px Arial,sans-serif;fill:#18344f}
+      .bodyb{font:700 18px Arial,sans-serif;fill:#18344f}
+      .tiny{font:400 15px Arial,sans-serif;fill:#536b85}
+      .white{fill:#fff}
+      .card{fill:#fff;stroke:#cfe3f4;stroke-width:2}
+      .soft{fill:#f7fbff}
+      .node{fill:#eef7ff;stroke:#c7e0f3;stroke-width:1.5}
+      .accent{fill:#0b67c2}
+      .teal{fill:#18b5bd}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="26" y="24" width="1548" height="852" rx="28" fill="#ffffff" stroke="#d5e7f5" stroke-width="2" filter="url(#shadow)"/>
+
+  <!-- Header -->
+  <text x="58" y="86" class="title">Quality Engineering Playbook</text>
+  <text x="58" y="128" class="subtitle">FinFlow — Plataforma Digital de Crédito</text>
+  <text x="58" y="159" class="small">produto fictício • estratégia, automação e boas práticas de qualidade ponta a ponta</text>
+  <text x="1310" y="78" class="bodyb">Vanessa Barbera</text>
+  <text x="1310" y="107" class="tiny">Portfólio de Quality Engineering</text>
+
+  <!-- Section 1 -->
+  <rect x="58" y="194" width="480" height="190" rx="20" class="card"/>
+  <circle cx="93" cy="230" r="22" class="accent"/>
+  <text x="86" y="238" font-family="Arial" font-weight="700" font-size="22" fill="#fff">1</text>
+  <text x="125" y="240" class="section">Objetivo</text>
+
+  <circle cx="92" cy="282" r="34" fill="#e9f5ff" stroke="#7ec7ef" stroke-width="5"/>
+  <circle cx="92" cy="282" r="18" fill="none" stroke="#0b67c2" stroke-width="5"/>
+  <line x1="92" y1="282" x2="127" y2="247" stroke="#0b67c2" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="124,242 140,239 133,255" fill="#0b67c2"/>
+
+  <circle cx="168" cy="276" r="10" class="teal"/><text x="163" y="282" font-size="14" fill="#fff">✓</text>
+  <text x="190" y="282" class="body">Estratégia de qualidade ponta a ponta</text>
+  <circle cx="168" cy="312" r="10" class="teal"/><text x="163" y="318" font-size="14" fill="#fff">✓</text>
+  <text x="190" y="318" class="body">Automação orientada por risco</text>
+  <circle cx="168" cy="348" r="10" class="teal"/><text x="163" y="354" font-size="14" fill="#fff">✓</text>
+  <text x="190" y="354" class="body">CI/CD, Quality Gates e evidências</text>
+
+  <!-- Section 2 -->
+  <rect x="560" y="194" width="982" height="190" rx="20" class="card"/>
+  <circle cx="595" cy="230" r="22" class="accent"/>
+  <text x="588" y="238" font-family="Arial" font-weight="700" font-size="22" fill="#fff">2</text>
+  <text x="627" y="240" class="section">Fluxo principal do produto</text>
+
+  <g transform="translate(600 278)">
+    <g>
+      <circle cx="45" cy="35" r="34" fill="#e8f3ff"/><circle cx="45" cy="28" r="11" fill="#428fe6"/><rect x="31" y="40" width="28" height="17" rx="8" fill="#428fe6"/>
+      <text x="16" y="92" class="bodyb">Cliente</text>
+    </g>
+    <line x1="90" y1="35" x2="150" y2="35" stroke="#3a8cd8" stroke-width="3"/><polygon points="150,35 140,29 140,41" fill="#3a8cd8"/>
+    <g transform="translate(155 0)">
+      <circle cx="45" cy="35" r="34" fill="#e7fbfb"/><circle cx="42" cy="31" r="13" fill="none" stroke="#19b6bd" stroke-width="5"/><line x1="52" y1="42" x2="63" y2="53" stroke="#19b6bd" stroke-width="5"/>
+      <text x="2" y="92" class="bodyb">Simulação</text>
+    </g>
+    <line x1="245" y1="35" x2="305" y2="35" stroke="#3a8cd8" stroke-width="3"/><polygon points="305,35 295,29 295,41" fill="#3a8cd8"/>
+    <g transform="translate(310 0)">
+      <circle cx="45" cy="35" r="34" fill="#eef3ff"/><rect x="34" y="17" width="22" height="32" rx="3" fill="none" stroke="#4f78df" stroke-width="4"/><line x1="39" y1="28" x2="51" y2="28" stroke="#4f78df" stroke-width="3"/><line x1="39" y1="36" x2="51" y2="36" stroke="#4f78df" stroke-width="3"/>
+      <text x="15" y="92" class="bodyb">Análise</text>
+    </g>
+    <line x1="400" y1="35" x2="460" y2="35" stroke="#3a8cd8" stroke-width="3"/><polygon points="460,35 450,29 450,41" fill="#3a8cd8"/>
+    <g transform="translate(465 0)">
+      <circle cx="45" cy="35" r="34" fill="#e9fbf8"/><rect x="33" y="18" width="24" height="31" rx="3" fill="none" stroke="#18b5bd" stroke-width="4"/><line x1="38" y1="29" x2="52" y2="29" stroke="#18b5bd" stroke-width="3"/>
+      <text x="4" y="92" class="bodyb">Proposta</text>
+    </g>
+    <line x1="555" y1="35" x2="615" y2="35" stroke="#3a8cd8" stroke-width="3"/><polygon points="615,35 605,29 605,41" fill="#3a8cd8"/>
+    <g transform="translate(620 0)">
+      <circle cx="45" cy="35" r="34" fill="#edf5ff"/><path d="M26 38 C35 24,42 24,50 36 C58 22,66 24,72 35 C61 51,39 52,26 38 Z" fill="none" stroke="#347fdf" stroke-width="4"/>
+      <text x="-5" y="92" class="bodyb">Contratação</text>
+    </g>
+    <line x1="710" y1="35" x2="770" y2="35" stroke="#3a8cd8" stroke-width="3"/><polygon points="770,35 760,29 760,41" fill="#3a8cd8"/>
+    <g transform="translate(775 0)">
+      <circle cx="45" cy="35" r="34" fill="#e9fbfb"/><rect x="28" y="23" width="34" height="23" rx="4" fill="none" stroke="#15aeb8" stroke-width="4"/><line x1="28" y1="31" x2="62" y2="31" stroke="#15aeb8" stroke-width="4"/>
+      <text x="6" y="92" class="bodyb">Pagamento</text>
+    </g>
+  </g>
+
+  <!-- Section 3 -->
+  <rect x="58" y="406" width="1484" height="246" rx="20" class="card"/>
+  <circle cx="93" cy="442" r="22" class="accent"/>
+  <text x="86" y="450" font-family="Arial" font-weight="700" font-size="22" fill="#fff">3</text>
+  <text x="125" y="451" class="section">Arquitetura de referência</text>
+
+  <rect x="88" y="486" width="126" height="56" rx="12" class="node"/><text x="130" y="520" class="bodyb">Web</text>
+  <rect x="88" y="559" width="126" height="56" rx="12" class="node"/><text x="119" y="593" class="bodyb">Mobile</text>
+  <rect x="252" y="514" width="126" height="75" rx="14" fill="url(#blue)"/><text x="286" y="544" font-family="Arial" font-weight="700" font-size="18" fill="#fff">API</text><text x="274" y="568" font-family="Arial" font-weight="700" font-size="18" fill="#fff">Gateway</text>
+  <line x1="214" y1="514" x2="252" y2="538" stroke="#5783af" stroke-width="3"/><line x1="214" y1="587" x2="252" y2="561" stroke="#5783af" stroke-width="3"/>
+
+  <g>
+    <rect x="424" y="482" width="140" height="60" rx="12" fill="#eafaf3"/><text x="445" y="518" class="bodyb">Autenticação</text>
+    <rect x="580" y="482" width="122" height="60" rx="12" fill="#edf5ff"/><text x="607" y="518" class="bodyb">Clientes</text>
+    <rect x="718" y="482" width="134" height="60" rx="12" fill="#fff6dc"/><text x="739" y="518" class="bodyb">Simulação</text>
+    <rect x="868" y="482" width="128" height="60" rx="12" fill="#f2edff"/><text x="892" y="518" class="bodyb">Propostas</text>
+    <rect x="1012" y="482" width="128" height="60" rx="12" fill="#eafaf3"/><text x="1038" y="518" class="bodyb">Contratos</text>
+    <rect x="1156" y="482" width="136" height="60" rx="12" fill="#fff0f0"/><text x="1177" y="518" class="bodyb">Pagamentos</text>
+  </g>
+
+  <line x1="378" y1="551" x2="424" y2="512" stroke="#537faa" stroke-width="3"/>
+  <line x1="378" y1="551" x2="580" y2="512" stroke="#537faa" stroke-width="3"/>
+  <line x1="378" y1="551" x2="718" y2="512" stroke="#537faa" stroke-width="3"/>
+
+  <rect x="650" y="570" width="290" height="58" rx="14" fill="#e8f3ff"/><text x="726" y="605" class="bodyb">Banco de Dados</text>
+  <line x1="494" y1="542" x2="700" y2="570" stroke="#537faa" stroke-width="2"/>
+  <line x1="641" y1="542" x2="735" y2="570" stroke="#537faa" stroke-width="2"/>
+  <line x1="785" y1="542" x2="785" y2="570" stroke="#537faa" stroke-width="2"/>
+  <line x1="932" y1="542" x2="850" y2="570" stroke="#537faa" stroke-width="2"/>
+  <line x1="1076" y1="542" x2="890" y2="570" stroke="#537faa" stroke-width="2"/>
+
+  <rect x="1315" y="503" width="142" height="58" rx="14" fill="#f2edff"/><text x="1334" y="538" class="bodyb">Broker/Eventos</text>
+  <rect x="1315" y="579" width="142" height="49" rx="14" fill="#f7f0ff"/><text x="1337" y="610" class="bodyb">Notificações</text>
+  <line x1="996" y1="512" x2="1315" y2="525" stroke="#745ac6" stroke-width="2"/>
+  <line x1="1140" y1="512" x2="1315" y2="532" stroke="#745ac6" stroke-width="2"/>
+  <line x1="1292" y1="512" x2="1315" y2="536" stroke="#745ac6" stroke-width="2"/>
+  <line x1="1386" y1="561" x2="1386" y2="579" stroke="#745ac6" stroke-width="2"/>
+
+  <!-- Section 4 -->
+  <rect x="58" y="674" width="1035" height="160" rx="20" class="card"/>
+  <circle cx="93" cy="710" r="22" class="accent"/>
+  <text x="86" y="718" font-family="Arial" font-weight="700" font-size="22" fill="#fff">4</text>
+  <text x="125" y="719" class="section">Pilares de Quality Engineering</text>
+
+  <g class="tiny">
+    <rect x="86" y="748" width="126" height="54" rx="10" fill="#edf5ff"/><text x="105" y="771" class="bodyb">Risk-Based</text><text x="126" y="792" class="tiny">Testing</text>
+    <rect x="224" y="748" width="112" height="54" rx="10" fill="#eafaf3"/><text x="249" y="780" class="bodyb">API Testing</text>
+    <rect x="348" y="748" width="132" height="54" rx="10" fill="#edf5ff"/><text x="366" y="771" class="bodyb">Web com</text><text x="385" y="792" class="tiny">Cypress</text>
+    <rect x="492" y="748" width="126" height="54" rx="10" fill="#f2edff"/><text x="514" y="780" class="bodyb">Mobile</text>
+    <rect x="630" y="748" width="132" height="54" rx="10" fill="#fff4e8"/><text x="648" y="771" class="bodyb">Contract</text><text x="658" y="792" class="tiny">Testing</text>
+    <rect x="774" y="748" width="122" height="54" rx="10" fill="#e9fbf8"/><text x="795" y="771" class="bodyb">Dados e</text><text x="810" y="792" class="tiny">SQL</text>
+    <rect x="908" y="748" width="154" height="54" rx="10" fill="#fff0f5"/><text x="926" y="771" class="bodyb">Mensageria</text><text x="937" y="792" class="tiny">e Eventos</text>
+  </g>
+
+  <!-- Section 5 -->
+  <rect x="1112" y="674" width="430" height="160" rx="20" class="card"/>
+  <circle cx="1147" cy="710" r="22" class="accent"/>
+  <text x="1140" y="718" font-family="Arial" font-weight="700" font-size="22" fill="#fff">5</text>
+  <text x="1179" y="719" class="section">Entregáveis</text>
+
+  <text x="1145" y="760" class="body">• 20 documentos estratégicos</text>
+  <text x="1145" y="790" class="body">• 4 templates reutilizáveis</text>
+  <text x="1345" y="760" class="body">• Mermaid</text>
+  <text x="1345" y="790" class="body">• Cypress • k6 • SQL • API</text>
+
+  <text x="58" y="864" class="tiny">Projeto de portfólio criado para demonstrar visão estratégica e técnica em Quality Engineering.</text>
+</svg>
